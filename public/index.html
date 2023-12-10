@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Distance Calculator</title>
+    <style>
+        #video-container {
+            position: relative;
+            width: 100%;
+        }
+
+        #video {
+            width: 100%;
+            height: auto;
+        }
+
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
