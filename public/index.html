@@ -10,7 +10,7 @@
         body {
             margin: 0;
             padding: 0;
-            width: 100vh;
+            width: 100vw;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -19,13 +19,13 @@
         canvas {
             position: absolute;
         }
+        #video {
+            display: block; 
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-    <!-- <div id="video-container">
-        <video id="video" autoplay width="720" height="560"></video>
-        <canvas id="canvas"></canvas>
-    </div> -->
     <video id="video" autoplay width="720" height="560" muted></video>
 </body>
 </html>
