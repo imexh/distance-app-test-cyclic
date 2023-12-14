@@ -4,8 +4,4 @@ const port = 3000;
 
 app.use(express.static("public"));
 
-// app.listen(port, () => {
-//     console.log(`Server is running at http://localhost:${port}`);
-// });
-
 app.listen(process.env.PORT || port, () => console.log(`Listening on port ${port}`))

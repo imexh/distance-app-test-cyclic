@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eye Care</title>
+    <title>Eye Care | Distance Calculator</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
     <style>
-        #video-container {
-            position: relative;
-            width: 100%;
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
-
-        #video {
-            width: 100%;
-            height: auto;
-        }
-
-        #canvas {
+        canvas {
             position: absolute;
-            top: 0;
-            left: 0;
+        }
+        #video {
+            display: block; 
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <h1>Distance Calculator for Eye Care | Data Collection</h1>
-    <h2>By Noobz69</h2>
-    <div id="video-container">
-        <video id="video" autoplay></video>
-        <canvas id="canvas"></canvas>
-    </div>
-
-    <script src="main.js"></script>
+    <!-- <h1>Eye Care</h1> -->
+    <!-- <h2 id="distance">0cm</h2> -->
+    <video id="video" autoplay width="720" height="560" muted></video>
+    <!-- <h3>By<br>Noobz69</h3> -->
 </body>
 </html>
